@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3C1994592356AF7900713BFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1994582356AF7900713BFE /* AppDelegate.m */; };
-		3C19945C2356AF7900713BFE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19945B2356AF7900713BFE /* SceneDelegate.m */; };
 		3C19945F2356AF7900713BFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19945E2356AF7900713BFE /* ViewController.m */; };
 		3C1994622356AF7900713BFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C1994602356AF7900713BFE /* Main.storyboard */; };
 		3C1994642356AF7B00713BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C1994632356AF7B00713BFE /* Assets.xcassets */; };
@@ -16,6 +15,7 @@
 		3C19946A2356AF7B00713BFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1994692356AF7B00713BFE /* main.m */; };
 		3C1994742356AF7C00713BFE /* videoClippingAndCommpressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1994732356AF7C00713BFE /* videoClippingAndCommpressTests.m */; };
 		3C19947F2356AF7C00713BFE /* videoClippingAndCommpressUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C19947E2356AF7C00713BFE /* videoClippingAndCommpressUITests.m */; };
+		3CE2EFCE2358541A003EC07A /* SDAVAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2EFCC2358541A003EC07A /* SDAVAssetExportSession.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		3C1994542356AF7900713BFE /* videoClippingAndCommpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = videoClippingAndCommpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C1994572356AF7900713BFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3C1994582356AF7900713BFE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3C19945A2356AF7900713BFE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		3C19945B2356AF7900713BFE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		3C19945D2356AF7900713BFE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3C19945E2356AF7900713BFE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3C1994612356AF7900713BFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +52,8 @@
 		3C19947A2356AF7C00713BFE /* videoClippingAndCommpressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = videoClippingAndCommpressUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C19947E2356AF7C00713BFE /* videoClippingAndCommpressUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = videoClippingAndCommpressUITests.m; sourceTree = "<group>"; };
 		3C1994802356AF7C00713BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CE2EFCC2358541A003EC07A /* SDAVAssetExportSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAVAssetExportSession.m; sourceTree = "<group>"; };
+		3CE2EFCD2358541A003EC07A /* SDAVAssetExportSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAVAssetExportSession.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +104,10 @@
 		3C1994562356AF7900713BFE /* videoClippingAndCommpress */ = {
 			isa = PBXGroup;
 			children = (
+				3CE2EFCD2358541A003EC07A /* SDAVAssetExportSession.h */,
+				3CE2EFCC2358541A003EC07A /* SDAVAssetExportSession.m */,
 				3C1994572356AF7900713BFE /* AppDelegate.h */,
 				3C1994582356AF7900713BFE /* AppDelegate.m */,
-				3C19945A2356AF7900713BFE /* SceneDelegate.h */,
-				3C19945B2356AF7900713BFE /* SceneDelegate.m */,
 				3C19945D2356AF7900713BFE /* ViewController.h */,
 				3C19945E2356AF7900713BFE /* ViewController.m */,
 				3C1994602356AF7900713BFE /* Main.storyboard */,
@@ -270,7 +270,7 @@
 				3C19945F2356AF7900713BFE /* ViewController.m in Sources */,
 				3C1994592356AF7900713BFE /* AppDelegate.m in Sources */,
 				3C19946A2356AF7B00713BFE /* main.m in Sources */,
-				3C19945C2356AF7900713BFE /* SceneDelegate.m in Sources */,
+				3CE2EFCE2358541A003EC07A /* SDAVAssetExportSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NM5AVH22B;
 				INFOPLIST_FILE = videoClippingAndCommpress/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NM5AVH22B;
 				INFOPLIST_FILE = videoClippingAndCommpress/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
